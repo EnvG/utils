@@ -63,8 +63,8 @@ int InputInteger(std::string msg, ACTION action = ACTION::CLEAR_CONSOLE)
 
     return (int)a;
 }
-/// @brief Ввода числа с плавающей точкой
-/// @param msg Сообщения предложения ввода
+/// @brief Ввод числа с плавающей точкой
+/// @param msg Сообщение предложения ввода
 /// @return Введённое число
 float InputFloat(std::string msg = "Введите число: ", ACTION action = ACTION::CLEAR_CONSOLE)
 {

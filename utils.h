@@ -13,16 +13,20 @@ enum ACTION
 /// @brief Очистка консоли
 void clear(ACTION action = ACTION::CLEAR_CONSOLE);
 
+#pragma region Ввод
 void Input(std::string msg, std::string &str, ACTION action);
 
 /// @brief Ввод целого числа
 /// @param msg Сообщение предложения ввода
 /// @return Введённое число
 int InputInteger(std::string msg = "Введите целое число: ", ACTION action = ACTION::CLEAR_CONSOLE);
+/// @brief Ввод числа с плавающей точкой
+/// @param msg Сообщение предложения ввода
+/// @return Введённое число
 float InputFloat(std:: string msg = "Введите число: ", ACTION action = ACTION::CLEAR_CONSOLE);
+#pragma endregion
 
-
-#pragma region Выводы
+#pragma region Вывод
 /// @brief Вывод вектора
 /// @tparam T Тип значений вектора
 /// @param values Вектор
